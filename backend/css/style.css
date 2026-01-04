@@ -1,0 +1,53 @@
+.navbar{
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.package-group {
+  display: flex;
+  gap: 12px;
+}
+
+
+
+.slot-card {
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .slot-card:hover {
+      transform: scale(1.05);
+    }
+    .occupied {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+.package-card {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 12px 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.2s;
+}
+
+.package-card input {
+  display: none;
+}
+
+.package-card:hover {
+  border-color: #000;
+}
+
+.package-card input:checked + div {
+  color: #000;
+  border: 2px solid #eed771;
+}
+
+.package-card input:checked ~ div {
+  font-weight:#eed771;
+}
+
+.package-card input:checked + div,
+.package-card input:checked {
+  accent-color: black;
+}
